@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button android:id="@+id/decrementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:text="-1"
+        android:textStyle="bold"
+        />
+
+<!--    I had some issues with getting a way to position some other textviews. I hope to learn more about it soon.-->
+
+<!--    <TextView android:id="@+id/greeting"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="Hello World!"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_alignBottom="@+id/instruction"-->
+<!--        />-->
+
+<!--    <TextView android:id="@+id/instruction"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:text="I am going to update the counter whenever you click the plus or minus sign"-->
+<!--        android:gravity="top"-->
+<!--        android:layout_alignBottom="@+id/counter"-->
+<!--        android:layout_toRightOf="@+id/decrementButton"/>-->
+
+    <TextView android:id="@+id/counter"
+        android:layout_width="80dp"
+        android:layout_height="fill_parent"
+        android:text="0"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/decrementButton"
+        android:layout_toRightOf="@+id/decrementButton"/>
+
+    <Button android:id="@+id/incrementButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/counter"
+        android:textSize="18sp"
+        android:text="+1"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
